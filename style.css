@@ -20,6 +20,7 @@ body {
   padding: 1rem 2rem;
 }
 
+
 /* header section part */
 
 header {
@@ -204,6 +205,7 @@ footer .social img:hover {
     width: 100%;
     text-align: center;
   }
+
 
   nav.show {
     display: flex;
