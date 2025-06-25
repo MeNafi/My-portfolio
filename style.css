@@ -209,9 +209,7 @@ footer .social img:hover {
     display: flex;
   }
 
-  .hamburger {
-    display: block;
-  }
+ 
 
   .hero {
     flex-direction: column;
