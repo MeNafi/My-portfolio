@@ -1,0 +1,224 @@
+
+/* body, container and margin, padding part */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0a0a0a;
+  color: #ccc;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+/* header section part */
+
+header {
+  background: #000;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  color: #9f8ff0;
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #9f8ff0;
+}
+
+
+/* hero section part */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  gap: 2rem;
+  background: #101020;
+}
+
+.hero-text h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.hero-text span {
+  color: #9f8ff0;
+}
+
+.hero-text p {
+  margin: 1rem 0;
+  color: #aaa;
+}
+
+.btn, .btn-outline {
+  padding: 10px 20px;
+  margin-right: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn {
+  background: #9f8ff0;
+  color: #fff;
+}
+
+.btn-outline {
+  border: 1px solid #9f8ff0;
+  color: #9f8ff0;
+}
+
+.hero-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #9f8ff0;
+  object-fit: cover;
+}
+
+
+/* sections part */
+
+section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+h2 {
+  color: #9f8ff0;
+  margin-bottom: 1rem;
+}
+
+/* showing projects section part */
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.project {
+  background: #1a1a2e;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 280px;
+}
+
+.project a {
+  color: #9f8ff0;
+  text-decoration: none;
+}
+
+
+/* contact form part */
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input, form textarea {
+  padding: 0.8rem;
+  background: #1a1a2e;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+form button {
+  background: #9f8ff0;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+}
+
+/* footer section part */
+
+footer {
+  background: #000;
+  padding: 2rem;
+  text-align: center;
+  color: #aaa;
+}
+
+footer .social {
+  margin-top: 1rem;
+}
+
+footer .social a {
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+
+footer .social img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+footer .social img:hover {
+  transform: scale(1.1);
+}
+
+/*  responsive For mobile  */
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: #000;
+    padding: 1rem;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .btn, .btn-outline {
+    margin-bottom: 0.5rem;
+  }
+}
